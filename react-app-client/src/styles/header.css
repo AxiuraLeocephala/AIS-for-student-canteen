@@ -1,0 +1,32 @@
+.header{
+	position: fixed;
+	max-width: 100%;
+	top: -1px;
+	left: 0;
+	z-index: 1;
+}
+.header .category-swiper {
+	padding: 10px;
+	outline: 0;
+	background-color: var(--tg-theme-bg-color);
+	border-bottom: 1px solid var(--tg-theme-hint-color);
+}
+.header .category-swiper .swiper-slide {
+	width: auto;
+}
+.header .category-swiper .swiper-slide button{
+	display: block;
+	border-radius: 25px;
+	line-height: 34px;
+	margin: 0 3px;
+	padding: 0 16px;
+	border: none;
+	transition: color, background-color ease-in-out 200ms;
+	color: var(--tg-theme-text-color);
+	font-size: 14px;
+	background: none;
+}
+.header .category-swiper .swiper-slide button.isActive{
+	color: var(--tg-theme-button-text-color);
+	background-color: var(--tg-theme-button-color);
+}

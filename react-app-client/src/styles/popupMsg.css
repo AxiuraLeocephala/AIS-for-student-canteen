@@ -1,0 +1,29 @@
+.popup-msg {
+    position: fixed;
+    top: 0;
+    width: 230px;
+    right: 25px;
+    border-radius: 10px;
+    color: var(--tg-theme-text-color);
+    background-color: rgba(0, 0, 0, 0.3);
+    -webkit-backdrop-filter: saturate(180%) blur(10px);
+    backdrop-filter: saturate(180%) blur(3px);
+    transition: transform 150ms ease-out;
+    z-index: 2;
+}
+.popup-msg p {
+    max-height: 48px;
+    margin: 10px 15px;
+    line-height: 21px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    line-clamp: 2;
+    text-align: justify;
+}
+.popup-msg.hidden {
+    transform: translateY(-100%);
+}
+.popup-msg.visible {
+    transform: translateY(115%);
+}

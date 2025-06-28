@@ -1,0 +1,47 @@
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity: 1;
+	background-color: rgba(0, 0, 0, 0.3);
+	-webkit-backdrop-filter: saturate(180%) blur(10px);
+	backdrop-filter: saturate(180%) blur(3px);
+	transition: all 150ms 50ms linear;
+}
+.overlay .popup {
+	position: absolute;
+	max-height: 70%;
+	width: 70%;
+	z-index: 2;
+	transition: opacity 150ms linear;
+	opacity: 1;
+}
+.overlay .popup img {
+	height: 170px;
+	width: 100%;
+}
+.overlay .popup h3 {
+	margin: 3px 5px 3px 5px;
+	font-size: 20px;
+}
+.overlay .popup p {
+	margin: 0 5px 10px 5px;
+	font-size: 18px;
+}
+@media (min-height: 70%) {
+	.overlay .p {
+		overflow: scroll;
+   }
+}
+.overlay.hide {
+	opacity: 0;
+	background-color: none;
+	-webkit-backdrop-filter: none;
+	backdrop-filter: none;
+}
+.overlay.hide .popup {
+	opacity: 0;
+}
