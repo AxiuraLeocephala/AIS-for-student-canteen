@@ -1,0 +1,4 @@
+authenticate-server/.venv/
+authenticate-server/src/config/_PROD_dbConfig.py
+authenticate-server/src/config/_PROD_serverConfig.py
+
