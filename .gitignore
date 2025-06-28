@@ -5,3 +5,7 @@ authorization-server/src/config/_PROD_serverConfig.py
 main-server-admin/node_modules/
 main-server-admin/src/config/_PROD_dbConfig.js
 main-server-admin/src/config/_PROD_serverConfig.js
+
+main-server-client/node_modules/
+main-server-client/src/config/_PROD_dbConfig.js
+main-server-client/src/config/_PROD_serverConfig.js
