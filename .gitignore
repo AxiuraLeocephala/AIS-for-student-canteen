@@ -1,4 +1,7 @@
-authenticate-server/.venv/
-authenticate-server/src/config/_PROD_dbConfig.py
-authenticate-server/src/config/_PROD_serverConfig.py
+authorization-server/.venv/
+authorization-server/src/config/_PROD_dbConfig.py
+authorization-server/src/config/_PROD_serverConfig.py
 
+main-server-admin/node_modules/
+main-server-admin/src/config/_PROD_dbConfig.js
+main-server-admin/src/config/_PROD_serverConfig.js
