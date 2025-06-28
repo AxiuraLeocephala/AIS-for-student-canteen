@@ -1,0 +1,61 @@
+.main-header-wrapper {
+  position: relative;
+  height: 35px;
+}
+.main-header-wrapper .main-header {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 65%;
+  height: 100%;
+  text-align: center;
+  font-weight: 600;
+  color: var(--on-primary);
+  background-color: var(--on-surface);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: 4;
+  transition: 0.3s background-color linear, 0.3s color linear;
+  cursor: pointer;
+}
+.main-header-wrapper .surface-main-header {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  max-width: 640px;
+  max-height: calc(100vh - 10px);
+  overflow: hidden;
+  background-color: var(--on-surface);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: 3;
+  transition: 0.1s width linear, 0.1s height linear;
+}
+.main-header-wrapper .surface-main-header .row {
+  margin: 5px;
+  height: 30px;
+}
+.main-header-wrapper .surface-main-header .arrow {
+  transform: rotate(90deg);
+  cursor: pointer;
+}
+.main-header-wrapper .surface-main-header .arrow img {
+  height: 30px;
+  width: 30px;
+}
+.main-header-wrapper .surface-main-header .arrow.turned {
+  transform: rotate(270deg);
+}
+.main-header-wrapper .main-header.expanded {
+  color: var(--on-surface);
+  background-color: var(--background);
+}
+.main-header-wrapper .surface-main-header.expanded {
+  width: var(--width-surface-header);
+  height: auto;
+  padding: 35px 15px 10px;
+  color: var(--on-primary);
+}

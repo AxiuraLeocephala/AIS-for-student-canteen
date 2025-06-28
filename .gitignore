@@ -12,3 +12,6 @@ main-server-client/src/config/_PROD_serverConfig.js
 
 proxy-server/node_modules/
 proxy-server/src/config/_PROD_serverConfig.js
+
+react-app-admin/build/
+react-app-admin/node_modules/

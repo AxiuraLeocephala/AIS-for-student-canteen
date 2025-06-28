@@ -1,0 +1,45 @@
+.row.time-acceptance-order {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 5px;
+}
+.row.time-acceptance-order .time {
+  display: flex;
+}
+.row.time-acceptance-order .time button {
+  padding: 0 15px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-user-select: none;
+  user-select: none;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #d8e9d8;
+}
+.row.time-acceptance-order .time input {
+  width: 35px;
+  height: 30px;
+  padding: 0px;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  color: var(--on-surface);
+  background-color: var(--background-secondary);
+}
+.row.time-acceptance-order .time input[type="number"]::-webkit-inner-spin-button, .row.time-acceptance-order .time input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.row.time-acceptance-order .time input.unvalid {
+  border: 2px solid red;
+  background-color: var(--error);
+}
+.row.time-acceptance-order .time .colon {
+  margin: 0 3px;
+}

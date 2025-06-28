@@ -1,0 +1,49 @@
+.main {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  height: 100%;
+  margin-top: env(safe-area-inset-top);
+  margin-bottom: env(safe-area-inset-bottom);
+}
+.main .column-wrapper {
+  flex: 1;
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.main .column-wrapper .column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  margin-top: 10px;
+  padding: 6px 0 6px 6px;
+  border-radius: 14px;
+  background-color: var(--surface);
+  box-shadow: 1px 1px 10px 1px var(--background-secondary);
+  transition: 0.3s background-color linear, 0.3s color linear;
+}
+.main .column-wrapper .column .column-header {
+  position: sticky;
+  max-width: 590px;
+  height: 100%;
+}
+.main .column-wrapper .column .column-header .header-top {
+  display: flex;
+  width: calc(100% - 6px);
+  justify-content: space-between;
+  padding: 0 15px;
+  border-radius: 10px 10px 0 0;
+}
+.main .column-wrapper .column .column-header .header-top.first {
+  color: var(--on-secondary);
+  background-color: var(--primary-variant1);
+}
+.main .column-wrapper .column .column-header .header-top.second {
+  color: var(--surface);
+  background-color: var(--primary-variant2);
+}
+.main .column-wrapper .column .column-header .header-top.third {
+  color: #94a0da;
+  background-color: var(--primary-variant3);
+}

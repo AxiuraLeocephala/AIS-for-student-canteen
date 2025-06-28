@@ -1,0 +1,98 @@
+:root {
+    /*light theme tokens*/
+	--primary-variant1-light: #f8ffa0;
+	--primary-variant2-light: #a8a2f8;
+	--primary-variant3-light: #26326c;
+	--background-light: #FFFFFF;
+	--background-secondary-light: #f0f0f0;
+	--surface-light: #FFFFFF;
+	--error-light: #B00020;
+	--on-primary-light: #FFFFFF;
+	--on-secondary-light: #000000;
+	--on-background-light: #000000;
+	--on-surface-light: #000000;
+	--on-error-light: #FFFFFF;
+
+
+    /*dark theme tokens*/
+	--primary-variant1-dark: #f8ffa0;
+	--primary-variant2-dark: #a8a2f8;
+	--primary-variant3-dark: #26326c;
+	--background-dark: #121212;
+	--background-secondary-dark: #212121;
+	--surface-dark: #121212;
+	--error-dark: #CF6679;
+	--on-primary-dark: #000000;
+	--on-secondary-dark: #000000;
+	--on-background-dark: #FFFFFF;
+	--on-surface-dark: #FFFFFF;
+	--on-error-dark: #000000;
+
+	/* phone */
+	--width-surface-header-phone: 100%;
+	--width-error-container-phone: 100%;
+
+	/* pc */
+	--width-surface-header-pc: 640px;
+	--width-error-container-pc: 400px;
+}
+
+[data-theme='light'] {
+    --primary-variant1: var(--primary-variant1-light);
+	--primary-variant2: var(--primary-variant2-light);
+	--primary-variant3: var(--primary-variant3-light);
+	--background: var(--background-light);
+	--background-secondary: var(--background-secondary-light);
+	--surface: var(--surface-light);
+	--error: var(--error-light);
+	--on-primary: var(--on-primary-light);
+	--on-secondary: var(--on-secondary-light);
+	--on-background: var(--on-background-light);
+	--on-surface: var(--on-surface-light);
+	--on-error: var(--on-error-light);
+}
+
+[data-theme='dark'] {
+    --primary-variant1: var(--primary-variant1-dark);
+	--primary-variant2: var(--primary-variant2-dark);
+	--primary-variant3: var(--primary-variant3-dark);
+	--background: var(--background-dark);
+	--background-secondary: var(--background-secondary-dark);
+	--surface: var(--surface-dark);
+	--error: var(--error-dark);
+	--on-primary: var(--on-primary-dark);
+	--on-secondary: var(--on-secondary-dark);
+	--on-background: var(--on-background-dark);
+	--on-surface: var(--on-surface-dark);
+	--on-error: var(--on-error-dark);
+}
+
+[user-agent="phone"] {
+	--width-surface-header: var(--width-surface-header-phone);
+	--width-error-container: var(--width-error-container-phone)
+}
+
+[user-agent="pc"] {
+	--width-surface-header: var(--width-surface-header-pc);
+	--width-error-container: var(--width-error-container-pc)
+}
+
+body {
+    font-size: 1.2rem;
+	margin: 0px;
+	color: var(--on-background);
+	background-color: var(--background);
+  	transition: 0.3s background-color linear, 0.3s color linear;
+	font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",
+	Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji",
+	"Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+	-webkit-user-select: none;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-touch-callout: none;
+}
+*,*:before,*:after {
+    box-sizing: border-box;
+}
+body::-webkit-scrollbar{
+	width: 0;
+}

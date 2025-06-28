@@ -1,0 +1,7 @@
+.order.assembly .btn-space button {
+  width: 100%;
+}
+.order.assembly .btn-space button.active {
+  color: var(--color-primary);
+  background-color: rgba(16, 168, 97, 0.929);
+}

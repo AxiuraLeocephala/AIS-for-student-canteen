@@ -1,0 +1,63 @@
+.row.workers {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 5px;
+}
+.list-workers-container {
+  max-height: 50vh;
+  padding: 5px 5px 0;
+  overflow: hidden;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0px 4px 5px -3px var(--background-secondary);
+}
+.list-workers-container .btn-add-worker {
+  width: 100%;
+  height: 45px;
+  padding: 0;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  user-select: none;
+  font-weight: 600;
+  cursor: pointer;
+  color: #000;
+  background-color: #d8e9d8;
+}
+.list-workers-container .list-workers {
+  overflow-y: auto;
+}
+.list-workers-container .list-workers .worker {
+  display: grid;
+  grid-template-columns: 0.2fr 1fr 1fr 0.8fr;
+  justify-content: space-between;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-bottom: 1px solid #585858;
+  border-image: linear-gradient(90deg, var(--on-surface), #cbcbcb, var(--on-surface)) 1;
+}
+.list-workers-container .list-workers .worker .btn-remove-worker {
+  width: 20px;
+  height: 23px;
+  padding: 0;
+  margin-right: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: #000;
+}
+.list-workers-container .list-workers .worker .btn-remove-worker img {
+  width: 100%;
+  height: 100%;
+}
+.list-workers-container .list-workers .worker .btn-change-worker {
+  padding: 5px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #000;
+  background-color: #f8f3bc;
+}
+.list-workers-container .list-workers .worker .role {
+  justify-self: center;
+}

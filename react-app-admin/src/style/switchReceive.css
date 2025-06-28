@@ -1,0 +1,35 @@
+.row.switch-receive {
+  display: flex;
+  justify-content: space-between;
+}
+.row.switch-receive .switch-wrapper {
+  position: relative;
+  width: 60px;
+  height: 24px;
+  border-radius: 14px;
+  cursor: pointer;
+}
+.row.switch-receive .switch-wrapper .switch {
+  position: absolute;
+  top: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: var(--on-surface);
+}
+.row.switch-receive .switch-wrapper.on {
+  border: 1px solid #26ff00;
+  background-color: #1dc300;
+}
+.row.switch-receive .switch-wrapper.on .switch {
+  right: 0;
+  border: 1px solid #26ff00;
+}
+.row.switch-receive .switch-wrapper.off {
+  border: 1px solid #ff0000;
+  background-color: #ff0000;
+}
+.row.switch-receive .switch-wrapper.off .switch {
+  left: 0;
+  border: 1px solid #ff0000;
+}

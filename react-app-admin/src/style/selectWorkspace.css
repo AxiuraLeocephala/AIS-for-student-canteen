@@ -1,0 +1,33 @@
+.select-workspace {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 3rem auto 0;
+  padding: 0 16px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 2px 50px rgba(181, 181, 181, 0.613);
+}
+.select-workspace h4 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 1rem auto 2rem;
+  padding: 0 20px;
+  text-transform: uppercase;
+}
+.select-workspace .btn-space {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  min-width: 70%;
+  margin: 0 auto 1rem;
+}
+.select-workspace .btn-space button {
+  margin-bottom: 1.5rem;
+  color: var(--on-secondary);
+  font-size: 20px;
+  border-radius: 15px;
+  padding: 15px 0;
+  border: none;
+  cursor: pointer;
+}

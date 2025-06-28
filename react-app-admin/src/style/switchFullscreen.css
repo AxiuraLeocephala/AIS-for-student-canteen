@@ -1,0 +1,35 @@
+.switch-fullscreen {
+  display: flex;
+  justify-content: space-between;
+}
+.switch-fullscreen .switch-wrapper {
+  position: relative;
+  width: 60px;
+  height: 24px;
+  border-radius: 14px;
+  cursor: pointer;
+}
+.switch-fullscreen .switch-wrapper .switch {
+  position: absolute;
+  top: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: var(--on-surface);
+}
+.switch-fullscreen .switch-wrapper.on {
+  border: 1px solid #26ff00;
+  background-color: #1dc300;
+}
+.switch-fullscreen .switch-wrapper.on .switch {
+    border: 1px solid #26ff00;
+    right: 0;
+}
+.switch-fullscreen .switch-wrapper.off {
+    border: 1px solid var(--background-secondary);
+    background-color: var(--background-secondary);
+}
+.switch-fullscreen .switch-wrapper.off .switch {
+    border: 1px solid var(--background);
+    left: 0;
+}

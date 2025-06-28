@@ -1,0 +1,66 @@
+.overlay {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-backdrop-filter: saturate(180%) blur(10px);
+  backdrop-filter: saturate(180%) blur(10px);
+  transition: all 50ms linear;
+}
+.overlay .popupCheckCodeReceive {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  padding: 16px;
+  border-radius: 10px;
+  opacity: 1;
+  overflow: hidden;
+  background-color: var(--background-secondary-dark);
+  transition: opacity 50ms linear;
+}
+.overlay .popupCheckCodeReceive h4 {
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #fff;
+}
+.overlay .popupCheckCodeReceive .input-wrapper input {
+  width: 100%;
+  height: 45px;
+  margin-bottom: 60px;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 10px;
+  color: #000;
+  outline: none;
+  border: 1px solid #9e9e9e;
+}
+.overlay .popupCheckCodeReceive .input-wrapper .error-msg {
+  position: relative;
+  top: -40px;
+  padding: 7px 10px;
+  color: var(--on-error);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 10px;
+  background-color: var(--error);
+}
+.overlay .popupCheckCodeReceive .input-wrapper button {
+  width: 100%;
+  height: 45px;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  user-select: none;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  color: #000;
+}

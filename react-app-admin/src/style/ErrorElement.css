@@ -1,0 +1,29 @@
+.error-container {
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  column-gap: 15px;
+  width: var(--width-error-container);
+  padding: 5px 15px;
+  border-radius: 10px;
+  color: var(--on-error);
+  background-color: var(--error);
+}
+.error-container .img-container {
+  width: 50px;
+  height: 50px;
+  justify-self: center;
+  align-self: center;
+}
+.error-container .img-container img {
+  width: 100%;
+  height: 100%;
+}
+.error-container .error-msg-container .title {
+  font-weight: 500;
+}
+.error-container .error-msg-container .msg {
+  font-size: 16px;
+}

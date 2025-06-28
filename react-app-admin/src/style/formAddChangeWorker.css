@@ -1,0 +1,169 @@
+.add-worker-wrapper {
+  position: absolute;
+  width: calc(100% - 30px);
+  margin-top: 10px;
+  padding: 15px 10px;
+  border-radius: 10px;
+  border: 1px solid var(--background-secondary);
+  box-shadow: 1px 1px 10px 1px var(--background-secondary);
+  background-color: var(--on-surface);
+  z-index: 5;
+}
+.add-worker-wrapper .cross {
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.add-worker-wrapper .cross img {
+  height: 100%;
+  width: 100%;
+}
+.add-worker-wrapper .cross:hover {
+  cursor: pointer;
+}
+.add-worker-wrapper h4 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 0px auto 20px;
+}
+.add-worker-wrapper form section article {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-flow: row;
+  align-items: start;
+  grid-column-gap: 20px;
+  grid-row-gap: 10px;
+}
+.add-worker-wrapper form section article .cell-fild {
+  display: grid;
+}
+.add-worker-wrapper form section article .cell-fild label {
+  font-size: 16px;
+  padding-left: 5px;
+}
+.add-worker-wrapper form section article .cell-fild input, .add-worker-wrapper form section article .cell-fild select {
+  height: 30px;
+  width: 100%;
+  border-radius: 7px;
+  border: 1px solid gray;
+}
+.add-worker-wrapper form section article .cell-fild input:invalid, .add-worker-wrapper form section article .cell-fild select:invalid {
+  border: 1px solid red;
+}
+.add-worker-wrapper form section article .cell-fild input {
+  padding: 0 16px;
+}
+.add-worker-wrapper form section article .cell-fild input:focus {
+  border: 2px solid  var(--on-background);
+}
+.add-worker-wrapper form section article .cell-fild select {
+  padding: 0 7px;
+  color: #000;
+}
+.add-worker-wrapper form section article .cell-fild .input-select-question-wrapper {
+  position: relative;
+}
+.add-worker-wrapper form section article .cell-fild .input-select-question-wrapper .description {
+  font-size: 10px;
+  color: gray;
+}
+.add-worker-wrapper form button {
+  width: 100%;
+  height: 45px;
+  margin-top: 2rem;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  user-select: none;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  color: #000;
+  background-color: #d8e9d8;
+}
+.add-worker-wrapper form button.change {
+  background-color: #f8f3bc;
+}
+.add-worker-wrapper .response-block {
+  position: absolute;
+  width: calc(100% - 20px);
+  height: calc(100% - 80px);
+}
+.add-worker-wrapper .response-block .login, .add-worker-wrapper .response-block .password, .add-worker-wrapper .response-block .response {
+  margin: 20px 0;
+  font-size: 2rem;
+  font-weight: 400;
+}
+.add-worker-wrapper .response-block .login .spoiler-container, .add-worker-wrapper .response-block .password .spoiler-container, .add-worker-wrapper .response-block .response .spoiler-container {
+  position: relative;
+  overflow: hidden;
+}
+.add-worker-wrapper .response-block .login .spoiler-container .shine, .add-worker-wrapper .response-block .password .spoiler-container .shine, .add-worker-wrapper .response-block .response .spoiler-container .shine {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 0;
+  height: 100%;
+  box-shadow: 1px 1px 15px 20px rgba(255, 255, 255, 0.9);
+  transform: skewX(-10deg);
+  animation: animations 3s infinite;
+  z-index: 1;
+}
+.add-worker-wrapper .response-block .login .spoiler-container .spoiler, .add-worker-wrapper .response-block .password .spoiler-container .spoiler, .add-worker-wrapper .response-block .response .spoiler-container .spoiler {
+  border-radius: 5px;
+  color: var(--background-secondary);
+  background-color: var(--background-secondary);
+}
+.add-worker-wrapper .response-block .response {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, calc(-50% - 50px));
+}
+.add-worker-wrapper .response-block .response .spoiler-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.add-worker-wrapper .response-block .response .response-msg {
+  display: block;
+  text-align: center;
+}
+.add-worker-wrapper .response-block .response .loaderbar {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: 4px;
+  background-color: var(--background-secondary);
+  border-radius: 2px;
+  animation: loaderbar 3s linear forwards;
+}
+.add-worker-wrapper .response-block .description {
+  padding-right: 20px;
+  font-size: 12px;
+  color: gray;
+}
+@keyframes animations {
+  0% {
+    left: 0%;
+  }
+  50% {
+    left: 110%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+@keyframes loaderbar {
+  from {
+    width: 50%;
+  }
+  to {
+    width: 0%;
+  }
+}

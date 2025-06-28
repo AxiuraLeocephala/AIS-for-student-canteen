@@ -1,0 +1,21 @@
+.order.confirm .btn-space {
+  position: relative;
+}
+.order.confirm .btn-space button {
+  position: absolute;
+  width: 49%;
+}
+.order.confirm .btn-space button.reject {
+  left: 0;
+  color: var(--color-primary);
+  background-color: rgba(168, 16, 16, 0.929);
+}
+.order.confirm .btn-space button.accept {
+  right: 0;
+  color: var(--color-primary);
+  background-color: rgba(16, 168, 97, 0.929);
+}
+.order.confirm .btn-space button.active {
+  width: 65%;
+  z-index: 2;
+}

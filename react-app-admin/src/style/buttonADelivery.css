@@ -1,0 +1,7 @@
+.order.awaiting-delivery .btn-space button {
+  width: 100%;
+}
+.order.awaiting-delivery .btn-space button.active {
+  color: var(--on-surface);
+  background-color: rgba(16, 168, 97, 0.929);
+}

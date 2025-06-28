@@ -1,0 +1,7 @@
+.order.confirm table .order-id {
+  color: var(--on-secondary);
+  background-color: #f4f1de;
+}
+.order.confirm table .order-payment-method {
+  background-color: #e07b5f;
+}

@@ -1,0 +1,7 @@
+.order.assembly .order-id {
+  color: var(--on-surface);
+  background-color: #6192A4;
+}
+.order.assembly table.active .order-id {
+  background-color: #9145d3;
+}
