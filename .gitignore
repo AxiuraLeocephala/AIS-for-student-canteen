@@ -23,3 +23,5 @@ telegram-bot/.venv/
 telegram-bot/src/config/_PROD_configBot.py
 telegram-bot/src/config/_PROD_configDB.py
 telegram-bot/src/config/_PROD_configServer.py
+
+ДОКУМЕНТАЦИЯ/Диплом/
